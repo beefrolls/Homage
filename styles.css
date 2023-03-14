@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Rubik+Mono+One&display=swap);
+
+
+html {
+    background-color: pink;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Pinyon Script', cursive;;
+    color:rgb(66, 2, 135);
+    font-size: 50px;
+    margin: 10px;
+    max-height: 200px;
+    width:auto;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+.music {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 400px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Rubik Mono One', sans-serif;
+    color: red;
+    background-color: whitesmoke;
+}
+
+.left-image:hover {
+    content: url(images/lk2.jpeg);
+    max-width: 400px;
+}
+
+.right-image:hover {
+    content: url(images/rk2.jpeg);
+    max-width: 400px;
+}
+
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    color: green;
+    font-size: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+  
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+  
+.marquee2 span {
+    animation-delay: 5s;
+}
+  
+@keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+
+
+.center {
+    width: auto;
+    height: 719.33px;
+}
+
+.pcont1,
+.pcont2 {
+    display: inline-flex;
+    flex-direction: column;
+}
